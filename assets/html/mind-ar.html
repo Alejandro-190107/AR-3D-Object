@@ -1,0 +1,45 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.0.0/mdb.min.css" rel="stylesheet" />
+    <!--  Logo For Page  -->
+    <link href="../img/logo.png" rel="icon">
+    <!--  CSS Local  -->
+    <link rel="stylesheet" href="../css/style.css">
+    <title> Mind AR </title>   
+</head>
+<body>
+
+    <a-scene mindar-image="imageTargetSrc: ../Model_3D/Bunny/Bunny.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights: true" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+        <a-assets>
+            <!--  <img id="card" src="" /> -->
+            <a-asset-item id="avatarModel" src="../Model_3D/Bunny/Bunny.glb"></a-asset-item>           
+        </a-assets>
+
+        <a-camera class="camera-frame" position="0 0 0" look-controls="enabled: false"></a-camera>
+
+        <a-entity mindar-image-target="targetIndex: 0"> 
+            <!--  <a-plane src="#card" position="0 0 0" height="0.552" width="1" rotation="0 0 0"></a-plane> -->
+            <a-gltf-model rotation="0 0 0" position="0 0 0.1" scale="0.2 0.2 0.2" src="#avatarModel" animation="property: position; to: 0 0 0; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate">
+        </a-entity>
+    </a-scene>
+
+    <!-- A-frame -->
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+    <!-- Image-frame -->
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v7.0.0/dist/aframe-extras.min.js"></script>
+    
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.0.0/mdb.umd.min.js"></script>
+     <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>  
+    <!-- Framework Font Awesome -->
+    <script src="https://kit.fontawesome.com/09ca335a75.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

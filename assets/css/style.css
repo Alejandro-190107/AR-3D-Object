@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #FBFBFB;
+}
+
+/* Navbar Style */
+.navbar{
+  background-color:#80DEEA;
+}
+
+.nav-link{
+  color: #7986CB;
+  font-size: 25px;
+  font-weight: 400;
+  font-family: cursive;
+}
+
+/* Container Main Style */
+
+.container-main {
+  margin: 0 auto;
+  max-width: 1500px;
+  min-height: 500px;
+  text-align: center;
+  padding: 20px; 
+  padding-bottom: 10vh;
+}
+
+/* Instuctions Style */
+
+.card-instructions{
+  border-radius: 3%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.header-instructions{
+  color: #00B8D4; 
+  text-align: center;
+  font-family: "Bad Script", cursive;
+  font-size: 18px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.text-instructions{
+  color: #262626;
+  text-align: justify;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.btn-instructions{
+  color: #262626;
+  background-color:#80DEEA;
+}
+
+.btn-instructions:hover{
+  color: #E0F7FA;
+  background-color:#26C6DA;
+}
+
+/* Instuctions Modal Style */
+
+.header-instructions-modal{
+  color: #00B8D4; 
+  text-align: center;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 25px;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.list-instructions-modal li{
+  color: #262626;
+  text-align: justify;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.btn-instructions-modal{
+  color: #262626;
+  background-color:#80DEEA;
+}
+
+.btn-instructions-modal:hover{
+  color: #E0F7FA;
+  background-color:#26C6DA;
+}
+
+/* Card Model 3D Style */
+
+.card-3d-model{
+  border-radius: 3%;
+  background-color: #B2EBF2;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.title-3d-model{
+  color: #00B8D4;
+  text-align: center;
+  font-family: "Bad Script", cursive;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.iframe-3d-model{
+  width: 100%;
+  height: 500px;
+  box-shadow: #18FFFF 0px 0px 0px 3px;
+}
+
+/* Footer Style */
+
+.footer{
+  background-color:#80DEEA;
+}
+
+.copyright{
+  color: #00ACC1;
+  font-family: cursive;
+  text-align: center;
+}
+
+.copyright-link{
+  color: #0097A7;
+  font-weight: 700;
+  text-align: center;
+} 
